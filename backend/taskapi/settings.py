@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "corsheaders",  # new
     "tasks",
-    "rest_framework",
+    "ninja",
 ]
 
 MIDDLEWARE = [

@@ -9,3 +9,6 @@
 body {
   @apply bg-zinc-950 text-white;
 }
+
+/* ShadCN styles */
+@import 'shadcn/styles.css';
