@@ -1,86 +1,87 @@
-# Proyecto CRUD con Django y Next.js
+# CRUD Project with Django and Next.js
 
-Este proyecto es una aplicación CRUD que utiliza **Django** como backend y **Next.js** como frontend. Permite crear, leer, actualizar y eliminar tareas.
+This project is a CRUD application that uses **Django** as the backend and **Next.js** as the frontend. It allows you to create, read, update, and delete tasks.
 
 ![basic](https://github.com/lace04/django-nextjs-crud/assets/73793929/5b05cca3-1cfd-41cf-b054-c99b0ecb055d)
 
-# 💻 Tecnologias
+# 💻 Technologies
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) 
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=flat&logo=django&logoColor=white) 
 ![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white) 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) 
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white)
-
+![ShadCN](https://img.shields.io/badge/ShadCN-%2338B2AC.svg?style=flat&logo=shadcn&logoColor=white)
+![Django Ninja](https://img.shields.io/badge/Django%20Ninja-%23092E20.svg?style=flat&logo=django&logoColor=white)
 
 ## Backend (Django)
 
-1. **Configuración del entorno virtual:**
+1. **Virtual Environment Setup:**
 
-   - Crea un entorno virtual llamado "venv":
+   - Create a virtual environment named "venv":
      ```
      python -m venv venv
      ```
 
-2. **Instalación de paquetes necesarios:**
+2. **Install Required Packages:**
 
-   - Instala Django y djangorestframework:
+   - Install Django and Django Ninja:
      ```
-     pip install django djangorestframework
+     pip install django django-ninja
      ```
 
-3. **Inicialización del proyecto Django:**
+3. **Initialize Django Project:**
 
-   - Crea un nuevo proyecto llamado "taskapi":
+   - Create a new project named "taskapi":
      ```
      django-admin startproject taskapi .
      ```
 
-4. **Creación de la aplicación "tasks":**
+4. **Create the "tasks" App:**
 
-   - Crea una aplicación llamada "tasks":
+   - Create an app named "tasks":
      ```
      python manage.py startapp tasks
      ```
 
-5. **Habilitación de CORS:**
+5. **Enable CORS:**
 
-   - Instala el paquete `django-cors-headers` para habilitar CORS:
+   - Install the `django-cors-headers` package to enable CORS:
      ```
      pip install django-cors-headers
      ```
 
-6. **Creación y migración del modelo:**
+6. **Create and Migrate the Model:**
 
-   - Crea el modelo de datos para las tareas:
+   - Create the data model for tasks:
      ```
      python manage.py makemigrations
      python manage.py migrate
      ```
 
-7. **Ejecución del servidor:**
-   - Inicia el servidor de desarrollo:
+7. **Run the Server:**
+   - Start the development server:
      ```
      python manage.py runserver
      ```
 
 ## Frontend (Next.js)
 
-1. **Configuración del entorno de desarrollo:**
+1. **Development Environment Setup:**
 
-   - Asegúrate de tener Node.js y npm instalados.
-   - Navega al directorio del frontend.
+   - Ensure you have Node.js and npm installed.
+   - Navigate to the frontend directory.
 
-2. **Instalación de dependencias:**
+2. **Install Dependencies:**
 
-   - Instala las dependencias de Next.js:
+   - Install Next.js and ShadCN dependencies:
      ```
-     pnpm install
+     npx create-next-app@latest
+     npx shadcn
      ```
 
-3. **Ejecución del servidor de desarrollo:**
-   - Inicia el servidor de desarrollo de Next.js:
+3. **Run the Development Server:**
+   - Start the Next.js development server:
      ```
      pnpm run dev
      ```
 
-¡Listo! Ahora tienes una aplicación CRUD funcional con Django y Next.js. ¡Diviértete desarrollando! 🚀
+That's it! You now have a functional CRUD application with Django and Next.js using ShadCN for the frontend and Django Ninja for the backend. Have fun developing! 🚀
